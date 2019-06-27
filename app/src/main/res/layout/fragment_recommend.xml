@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecommendFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cb132b">
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:src="@drawable/logo_1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+
+                    <ImageView
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/cx"
+                        android:gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:id="@+id/ed"
+                        android:gravity="center"
+                        android:text="推荐"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/wbk"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp" />
+                    <Button
+                        android:id="@+id/btn_find"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ss"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <ImageView
+                        android:id="@+id/rc_login"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/me_home"
+                        android:gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/tv_rc_title"
+           android:textSize="25dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+            <View
+                android:background="#E4DFDF"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_rc_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_rc_author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="#E4DFDF"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"/>
+                <View
+                    android:background="#E4DFDF"
+                    android:layout_width="3dp"
+                    android:layout_height="150dp"/>
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"/>
+                <View
+                    android:background="#E4DFDF"
+                    android:layout_width="3dp"
+                    android:layout_height="150dp"/>
+
+            </LinearLayout>
+            <View
+                android:background="#E4DFDF"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swrfreshlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lv_product"
+                    android:divider="#FFCCDBDC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
